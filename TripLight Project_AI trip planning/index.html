@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <!-- 基本設定 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 網頁標題 -->
+    <title>TripLight</title>
+
+    <!-- 網頁介紹 -->
+    <meta
+      name="description"
+      content="我們提供旅遊行程規劃服務，例如：套裝行程 票券  等等"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- 載入字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 載入 CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- 載入icon -->
+    <link rel="shortcut icon" href="./Icons/icon.png" />
+    <link rel="bookmark" href="./Icons/icon.png" />
+  </head>
+  <body>
+    <!-- 標題 -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./Icons/icon.png" alt="Logo" /></a>
+        <h1>TripLight</h1>
+      </div>
+      <!-- 導覽列 -->
+      <nav>
+        <ul>
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">會員登入</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+      <section class="backImage">
+        <!-- 該容器將圖片變黑 -->
+        <div class="filter"></div>
+
+        <!-- 該頁主題 -->
+        <h3>
+          準備好展開一段美好的旅程了嗎？<br />
+          現在準備開始
+        </h3>
+
+        <!-- 設定按鈕 -->
+        <button class="start" onclick="goToWebsite()">現在開始</button>
+      </section>
+
+      <!-- 第二頁 -->
+      <section class="second">
+        <h2>
+          透過給予最好的品質與服務，我們幫助你獲得更最好的<br />
+          <span style="color: #12948c">旅遊規劃服務</span>
+        </h2>
+
+        <!-- 設定下方卡片區塊 -->
+        <section class="cards">
+          <!-- 卡片一 -->
+          <div class="card">
+            <!-- 將圖片用容器包起來 -->
+            <div class="img_container">
+              <img
+                src="./Pictures/braden-jarvis-prSogOoFmkw-unsplash.jpg"
+                alt="picture"
+              />
+            </div>
+
+            <!-- 大標題 -->
+            <h4>行程規劃</h4>
+
+            <!-- 內容 -->
+            <p>
+              歡迎使用AI行程規劃服務！我們的AI可以根據您的旅遊偏好和需求，提供最適合您的行程規劃。讓我們為您設計一趟充滿冒險和驚喜的旅程吧！
+            </p>
+
+            <!-- 連結 -->
+            <a href="#">AI行程規劃</a>
+          </div>
+          <div class="card">
+            <div class="img_container">
+              <img
+                src="./Pictures/sean-o-KMn4VEeEPR8-unsplash.jpg"
+                alt="picture"
+              />
+            </div>
+            <h4>票券購買</h4>
+            <p>
+              我們提供最優惠的票價，讓您輕鬆探索目的地的美麗風光。無論您是一個喜愛自然風光的人，還是一個對文化感興趣的人，我們都有適合您的門票選項。
+            </p>
+            <a href="#">了解更多</a>
+          </div>
+          <div class="card">
+            <div class="img_container">
+              <img
+                src="./Pictures/tatonomusic-FFCgotROOTY-unsplash.jpg"
+                alt="picture"
+              />
+            </div>
+            <h4>套裝行程</h4>
+            <p>
+              我們的旅遊套餐包括一系列的活動和景點。無論您想要冒險探索自然美景、尋找文化脈搏、品嚐異國美食，還是純粹享受悠閒假期，我們都為您度身訂做最棒的行程。
+            </p>
+            <a href="#">線上搜尋</a>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <!-- 設定Footer上半部logo與標題 -->
+      <section class="top">
+        <div class="logo2">
+          <img src="./Icons/icon.png" alt="Logo" />
+          <h1>TripLight</h1>
+        </div>
+      </section>
+
+      <!-- 設定Footer下半部 -->
+      <section class="down">
+        <!-- 分成4個小部分 -->
+        <div class="foot">
+          <!-- 放入Home連結 -->
+          <a href="#">Home</a>
+
+          <!-- 放入facebook連結，裡面包圖片 -->
+          <a href="https://www.facebook.com/"
+            ><img src="./Icons/facebook.svg" alt="facebook"
+          /></a>
+        </div>
+        <div class="foot">
+          <a href="#">About</a>
+          <a href="https://www.instagram.com/"
+            ><img src="./Icons/instagram.svg" alt="instagram"
+          /></a>
+        </div>
+        <div class="foot">
+          <a href="#">Login</a>
+          <a href="https://twitter.com/"
+            ><img src="./Icons/twitter.svg" alt="twitter"
+          /></a>
+        </div>
+        <div class="foot">
+          <a href="#">Contact</a>
+          <a href="https://www.youtube.com/"
+            ><img src="./Icons/youtube.svg" alt="youtube"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script src="./style/app.js"></script>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripLight|行程規劃</title>
+    <meta name="description" content="AI行程規劃" />
+    <!-- 載入字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC&family=Noto+Serif+HK:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 載入 CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- 載入icon -->
+    <link rel="shortcut icon" href="./Icons/icon.png" />
+    <link rel="bookmark" href="./Icons/icon.png" />
+
+    <!-- CSS -->
+    <style>
+      form {
+        padding: 2rem;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      label {
+        color: #09777d;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="number"],
+      select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      select {
+        height: 50px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #09777d;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #096d7d;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 標題 -->
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./Icons/icon.png" alt="Logo" /></a>
+        <h1>TripLight</h1>
+      </div>
+      <!-- 導覽列 -->
+      <nav>
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="#">關於我們</a></li>
+          <li><a href="#">會員登入</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 主要內容 -->
+    <main>
+      <form id="myForm">
+        <label for="destination">目的地城市或國家：</label>
+        <input type="text" id="destination" name="destination" />
+
+        <label for="travelDate">旅行日期：</label>
+        <input type="date" id="travelDate" name="travelDate" />
+
+        <label for="travelDays">旅行天數：</label>
+        <input
+          type="number"
+          id="travelDays"
+          name="travelDays"
+          min="1"
+          max="365"
+        />
+
+        <label for="budgetRange">預算範圍：</label>
+        <select id="budgetRange" name="budgetRange">
+          <option value="0"></option>
+          <option value="0-5000">0-5000</option>
+          <option value="5000-10000">5000-10000</option>
+          <option value="10000-20000">10000-20000</option>
+          <option value="20000-50000">20000-50000</option>
+          <option value="50000+">50000+</option>
+        </select>
+
+        <label for="travelStyle">旅遊方式：</label><br />
+        <input
+          type="radio"
+          id="travelStyle1"
+          name="travelStyle"
+          value="自助旅行"
+        />
+        <label for="travelStyle1">自助旅行</label><br />
+        <input
+          type="radio"
+          id="travelStyle2"
+          name="travelStyle"
+          value="跟團旅行"
+        />
+        <label for="travelStyle2">跟團旅行</label><br />
+        <input
+          type="radio"
+          id="travelStyle3"
+          name="travelStyle"
+          value="包車旅遊"
+        />
+        <label for="travelStyle3">包車旅遊</label><br /><br />
+
+        <label for="travelStyle">偏好旅遊風格：</label>
+        <select id="travelStyle" name="travelStyle">
+          <option value="0"></option>
+          <option value="文化">文化</option>
+          <option value="自然">自然</option>
+          <option value="冒險">冒險</option>
+          <option value="休閒">休閒</option>
+          <option value="美食">美食</option>
+        </select>
+
+        <label for="sightseeing">景點類型：</label><br />
+        <input
+          type="checkbox"
+          id="sightseeing1"
+          name="sightseeing"
+          value="自然風光"
+        />
+        <label for="sightseeing1">自然風光</label><br />
+        <input
+          type="checkbox"
+          id="sightseeing3"
+          name="sightseeing"
+          value="主題公園"
+        />
+        <label for="sightseeing3">主題公園</label><br />
+        <input
+          type="checkbox"
+          id="sightseeing2"
+          name="sightseeing"
+          value="博物館"
+        />
+        <label for="sightseeing2">博物館</label><br />
+
+        <input
+          type="checkbox"
+          id="sightseeing4"
+          name="sightseeing"
+          value="海灘"
+        />
+        <label for="sightseeing4">海灘</label><br /><br />
+
+        <label for="activities">活動類型：</label><br />
+        <input
+          type="checkbox"
+          id="activities1"
+          name="activities"
+          value="登山"
+        />
+        <label for="activities1">登山</label><br />
+        <input
+          type="checkbox"
+          id="activities2"
+          name="activities"
+          value="潛水"
+        />
+        <label for="activities2">潛水</label><br />
+        <input
+          type="checkbox"
+          id="activities3"
+          name="activities"
+          value="購物"
+        />
+        <label for="activities3">購物</label><br />
+        <input
+          type="checkbox"
+          id="activities4"
+          name="activities"
+          value="美食"
+        />
+        <label for="activities4">美食</label><br />
+        <input
+          type="checkbox"
+          id="activities5"
+          name="activities"
+          value="文化體驗"
+        />
+        <label for="activities5">文化體驗</label><br /><br />
+
+        <input type="submit" value="開始規劃" />
+      </form>
+    </main>
+  </body>
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // 防止表單提交
+
+      // 獲取表單元素的值
+      const destination = document.getElementById("destination").value;
+      const travelDate = document.getElementById("travelDate").value;
+      const travelDays = document.getElementById("travelDays").value;
+      const budgetRange = document.getElementById("budgetRange").value;
+      const travelStyle = document.querySelector(
+        'input[name="travelStyle"]:checked'
+      );
+      const travelStyleValue = travelStyle ? travelStyle.value : "";
+
+      const preferredStyle = document.getElementById("travelStyle").value;
+      const sightseeing = document.querySelectorAll(
+        'input[name="sightseeing"]:checked'
+      );
+      const sightseeingValues = [];
+      sightseeing.forEach((item) => {
+        sightseeingValues.push(item.value);
+      });
+      const activities = document.querySelectorAll(
+        'input[name="activities"]:checked'
+      );
+      const activitiesValues = [];
+      activities.forEach((item) => {
+        activitiesValues.push(item.value);
+      });
+
+      alert(`
+      1. **目的地城市或國家:${destination}
+      2. **旅行日期:${travelDate}
+      2.   旅行天數:${travelDays}
+       3. **預算範圍:${budgetRange}
+       4. **偏好的旅遊方式:${travelStyleValue}
+        5. **偏好的景點和活動類型:
+            1. 喜歡的旅遊風格類型:${preferredStyle}
+            2. 喜歡的景點類型:${sightseeingValues}
+            3. 喜歡參加哪些活動:${activitiesValues}
+        中午：[行程][花費]
+        下午：[行程][花費]
+        晚上：[行程][花費]
+        住宿：[飯店名稱][金額]
+    `);
+    });
+  </script>
+</html>

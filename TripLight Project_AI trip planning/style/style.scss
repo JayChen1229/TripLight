@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  box-shadow: 3px 3px 5px 1px rgb(107, 107, 107); //導覽列必須設定
+  background-color: white;
+  display: flex;
+  align-items: center; //垂直對齊中間
+  flex-wrap: wrap; //滿足RWD
+  position: sticky; //讓導覽列持續在上面
+  top: 0;
+  z-index: 5; //設定不會被其他元素蓋住
+
+  div.logo {
+    flex: 5 1 400px; //寬度佔比5/7, 最小400px
+    display: flex;
+    align-items: center; //垂直對齊
+    margin-left: 2rem;
+    img {
+      //隨著視窗大小改變, 正方形
+      width: 4vw;
+      height: 4.2vw;
+      margin-bottom: 0.5rem;
+    }
+  }
+  nav {
+    flex: 2 1 400px; //寬度佔比2/7
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around; //水平排版
+      li {
+        a {
+          color: #09777d;
+          text-decoration: none;
+          font-size: 1.35rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  //設定背景圖片
+  section.backImage {
+    min-height: 90vh; //設定最小高度，以免被壓縮
+    width: 100%;
+    background-image: url(../Pictures/1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+      font-size: 3.5rem;
+      color: white;
+      margin: 2rem 0rem;
+    }
+    button.start {
+      background-color: #3bf0e5;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+
+    div.filter {
+      background-color: rgba(0, 0, 0, 0.2);
+      min-height: 90vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  section.second {
+    display: flex;
+    flex-direction: column; //讓item垂直
+    align-items: center; //讓item到中間
+    text-align: center; //讓文字到中間
+
+    h2 {
+      font-size: 2rem;
+      margin: 2rem 0rem;
+    }
+
+    section.cards {
+      display: flex;
+      width: 80%;
+      min-height: 80vh;
+      flex-wrap: wrap;
+
+      div.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        flex: 1 1 300px;
+
+        //設定圖片的邊框，超出去則隱藏
+        div.img_container {
+          overflow: hidden;
+          width: 15vw;
+          height: 15vw;
+          border-radius: 50%;
+
+          //圖片設定寬高，以及動畫速度
+          img {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            transition: all 0.3s;
+          }
+          //滑鼠移到圖片會變大
+          img:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        h4 {
+          font-size: 2rem;
+        }
+        p {
+          text-align: justify;
+          font-size: 1rem;
+          margin: 1rem 0rem;
+        }
+        a {
+          text-decoration: none;
+          padding: 1rem;
+          background-color: #09777d;
+          color: white;
+          padding: 1rem 1.5rem;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  section.top {
+    div.logo2 {
+      display: flex;
+      align-items: center;
+      img {
+        width: 5vw;
+        height: 5.3vw;
+      }
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+  section.down {
+    display: flex;
+    justify-content: space-around;
+    div.foot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0.5rem;
+      img {
+        padding-top: 1rem;
+        width: 6vw;
+        height: 6vw;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* scrollar bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    section.second {
+      section.cards {
+        div.card {
+          img {
+            width: 40vw;
+            height: 40vw;
+          }
+        }
+      }
+    }
+  }
+  section.down {
+    div.foot {
+      font-size: 1.5rem;
+      a {
+        img {
+          width: 15vw;
+          height: 15vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    div.logo {
+      margin-left: 0.5rem;
+      img {
+        width: 15w;
+        height: 15vw;
+      }
+    }
+  }
+}
