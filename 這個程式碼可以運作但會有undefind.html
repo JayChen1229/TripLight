@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat with GPT-3.5</title>
+  </head>
+  <body>
+    <h1>Chat with GPT-3.5</h1>
+    <div>
+      <label for="input">Message:</label>
+      <input type="text" id="input" />
+      <button id="send">Send</button>
+    </div>
+    <div id="output"></div>
+    <script>
+      const API_KEY = "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";
+      const MODEL = "gpt-3.5-turbo";
+      const URL = "https://api.openai.com/v1/chat/completions";
+
+      function chatGPT(message) {
+        const data = JSON.stringify({
+          model: MODEL,
+          messages: [
+            {
+              role: "user",
+              content: message,
+            },
+          ],
+        });
+
+        const options = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${API_KEY}`,
+          },
+          body: data,
+        };
+
+        return fetch(URL, options)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Request failed with status " + response.status);
+            }
+            return response.json();
+          })
+          .then((data) => {
+            return data.choices[0].text;
+          });
+      }
+
+      // Example usage
+      const input = document.getElementById("input");
+      const send = document.getElementById("send");
+      const output = document.getElementById("output");
+
+      send.addEventListener("click", () => {
+        const message = input.value;
+        chatGPT(message)
+          .then((response) => {
+            const result = response;
+            output.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
+            output.innerHTML +=
+              "<p><strong>ChatGPT:</strong> " + result + "</p>";
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>
