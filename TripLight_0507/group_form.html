@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>TripLight | Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- 關鍵字設定 -->
+    <meta
+      name="keywords"
+      content="旅遊, 行程規劃, 票券, AI, ChatGPT, Google map, 客製化行程, 套裝行程"
+    />
+    <!-- 網頁介紹 -->
+    <meta
+      name="description"
+      content="我們提供旅遊行程規劃服務，以及販售套裝行程 票券 等等"
+    />
+
+    <script>
+      addEventListener(
+        "load",
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- custom css -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- fontawesome css -->
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <!-- 載入字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //google fonts -->
+
+    <!-- 載入icon -->
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link rel="bookmark" href="./images/icon.png" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container" style="padding-right: 0px">
+        <!-- nav -->
+        <nav class="py-md-4 py-3 d-lg-flex">
+          <div id="logo">
+            <h1 class="mt-md-0 mt-2">
+              <a href="index.html"
+                ><img src="./images/icon.png" class="icon_triplight" />
+                TripLight
+              </a>
+            </h1>
+          </div>
+          <label for="drop" class="toggle"
+            ><span class="fa fa-bars"></span
+          ></label>
+          <input type="checkbox" id="drop" />
+          <ul class="menu ml-auto mt-1">
+            <li class="active"><a href="index.html">首頁</a></li>
+            <li class=""><a href="booking.html">AI行程規劃</a></li>
+            <li class=""><a href="tickets.html">票券</a></li>
+            <li class=""><a href="packages.html">套裝行程</a></li>
+            <li class=""><a href="articles.html">旅遊文章</a></li>
+            <li class="booking"><a href="login.html">登入/註冊</a></li>
+            <li class="">
+              <a href="shopping_car.html"
+                ><img src="./images/shoppingCar.svg" alt="" style="width: 2em"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- banner -->
+    <section class="banner_inner" id="home">
+      <div class="banner_inner_overlay"></div>
+    </section>
+    <!-- //banner -->
+
+    <!-- Booking -->
+    <section class="contact py-5">
+      <div class="container py-lg-5 py-sm-4">
+        <h2 class="heading text-capitalize text-center mb-lg-5 mb-4">
+          提供多人團客克制化需求
+        </h2>
+        <div class="contact-grids">
+          <div class="row">
+            <div class="col-lg-7 contact-left-form">
+              <form action="#" method="post" class="row">
+                <div class="col-sm-6 form-group contact-forms">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="destination"
+                    name="destination"
+                    placeholder="目的地城市或國家"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6 form-group contact-forms">
+                  <select
+                    class="form-control"
+                    id="travelDays"
+                    name="travelDays"
+                  >
+                    <option>旅行天數</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group contact-forms">
+                  <select
+                    class="form-control"
+                    id="budgetRange"
+                    name="budgetRange"
+                  >
+                    <option value="0">預算範圍</option>
+                    <option value="0-5000">0-5000</option>
+                    <option value="5000-10000">5000-10000</option>
+                    <option value="10000-20000">10000-20000</option>
+                    <option value="20000-50000">20000-50000</option>
+                    <option value="50000+">50000+</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group contact-forms">
+                  <select
+                    class="form-control"
+                    id="travelStyle"
+                    name="travelStyle"
+                  >
+                    <option value="0">偏好旅遊風格</option>
+                    <option value="文化">文化</option>
+                    <option value="自然">自然</option>
+                    <option value="冒險">冒險</option>
+                    <option value="休閒">休閒</option>
+                    <option value="美食">美食</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group contact-forms">
+                  <select class="form-control" id="adults">
+                    <option>Adults</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 or more</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group contact-forms">
+                  <select class="form-control" id="kids">
+                    <option>Kids</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 or more</option>
+                  </select>
+                </div>
+                <div class="col-md-12 form-group contact-forms">
+                  <textarea
+                    class="form-control"
+                    placeholder="額外客製化需求"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="col-md-12 booking-button">
+                  <button class="btn btn-block sent-butnn">開始規劃</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-5 contact-right pl-lg-5">
+              <div class="image-tour position-relative">
+                <img src="images/banner1.jpg" alt="" class="img-fluid" />
+                <p>
+                  <span class="fa fa-magic"></span>
+                  <span>只需要不到一分鐘</span>
+                </p>
+              </div>
+
+              <h4>團客表單</h4>
+              <p class="mt-3">團客團客</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //Booking -->
+
+    <!--footer -->
+    <footer>
+      <section class="footer footer_w3layouts_section_1its py-5">
+        <div class="container py-lg-4 py-3">
+          <div class="row footer-top">
+            <div class="col-lg-3 col-sm-6 footer-grid_section_1its_w3">
+              <div class="footer-title">
+                <h3>地點資訊</h3>
+              </div>
+              <div class="row">
+                <ul class="col-12 links">
+                  <li>
+                    <a
+                      href="https://www.google.com/maps?q=桃園市中壢區復興路46號9樓"
+                      target="_blank"
+                      >地址：桃園市中壢區復興路46號9樓</a
+                    >
+                  </li>
+                  <li><a href="tel:02-1234-5678">電話：02-1234-5678</a></li>
+                  <li>
+                    <a href="mailto:contact@example.com"
+                      >信箱：triplirht@gmail.com</a
+                    >
+                  </li>
+                  <li><a href="tel:02-1234-5678">傳真：02-1234-5678</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-grid_section mt-sm-0 mt-4">
+              <div class="footer-title">
+                <h3>認識TripLight</h3>
+              </div>
+              <div class="row">
+                <ul class="col-10 links">
+                  <li><a href="about.html" class="scroll">關於我們</a></li>
+                  <li>
+                    <a href="user_terms.html" class="scroll">使用者條款 </a>
+                  </li>
+                  <li>
+                    <a href="privacy_policy.html" class="scroll"
+                      >隱私權保護政策</a
+                    >
+                  </li>
+                  <li><a href="faq.html" class="scroll"> 常見問題與幫助</a></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3"
+            >
+              <div class="footer-title">
+                <h3>成為合作夥伴</h3>
+              </div>
+              <div class="row">
+                <ul class="col-6 links">
+                  <li>
+                    <a href="supplier_form.html" class="scroll">成為供應商</a>
+                  </li>
+                  <li>
+                    <a href="blogger_photographer.html" class="scroll"
+                      >部落客/攝影師合作計畫</a
+                    >
+                  </li>
+                  <li>
+                    <a href="group_form.html" class="scroll">團體客製規劃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3"
+            >
+              <div class="footer-title">
+                <h3>聯絡我們</h3>
+              </div>
+              <ul class="social_section_1info">
+                <li>
+                  <a href="https://www.facebook.com/TibaMe"
+                    ><img src="./images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/tibame_wiedu/"
+                    ><img src="./images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="./images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li class="youtube">
+                  <a
+                    href="https://www.youtube.com/channel/UClhecf7eOGHwbKW5e7l_pTA"
+                    ><img src="./images/youtube.svg" alt="youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="copyright py-3 text-center">
+      <p>COPYRIGHT © 2023 TripLight All rights reserved.</p>
+    </div>
+    <!-- //copyright -->
+
+    <!-- move top -->
+    <div class="move-top text-right">
+      <a href="#home" class="move-top">
+        <span class="fa fa-angle-up mb-3" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- move top -->
+  </body>
+</html>

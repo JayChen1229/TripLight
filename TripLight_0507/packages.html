@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>TripLight | Packages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- 關鍵字設定 -->
+    <meta
+      name="keywords"
+      content="旅遊, 行程規劃, 票券, AI, ChatGPT, Google map, 客製化行程, 套裝行程"
+    />
+    <!-- 網頁介紹 -->
+    <meta
+      name="description"
+      content="我們提供旅遊行程規劃服務，以及販售套裝行程 票券 等等"
+    />
+
+    <script>
+      addEventListener(
+        "load",
+        function () {
+          setTimeout(hideURLbar, 0);
+        },
+        false
+      );
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- custom css -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- fontawesome css -->
+    <!-- //css files -->
+
+    <!-- google fonts -->
+    <!-- 載入字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //google fonts -->
+
+    <!-- 載入icon -->
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link rel="bookmark" href="./images/icon.png" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container" style="padding-right: 0px">
+        <!-- nav -->
+        <nav class="py-md-4 py-3 d-lg-flex">
+          <div id="logo">
+            <h1 class="mt-md-0 mt-2">
+              <a href="index.html"
+                ><img src="./images/icon.png" class="icon_triplight" />
+                TripLight
+              </a>
+            </h1>
+          </div>
+          <label for="drop" class="toggle"
+            ><span class="fa fa-bars"></span
+          ></label>
+          <input type="checkbox" id="drop" />
+          <ul class="menu ml-auto mt-1">
+            <li class="active"><a href="index.html">首頁</a></li>
+            <li class=""><a href="booking.html">AI行程規劃</a></li>
+            <li class=""><a href="tickets.html">票券</a></li>
+            <li class=""><a href="packages.html">套裝行程</a></li>
+            <li class=""><a href="articles.html">旅遊文章</a></li>
+            <li class="booking"><a href="login.html">登入/註冊</a></li>
+            <li class="">
+              <a href="shopping_car.html"
+                ><img src="./images/shoppingCar.svg" alt="" style="width: 2em"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //nav -->
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- banner -->
+    <section class="banner_inner" id="home">
+      <div class="banner_inner_overlay"></div>
+    </section>
+    <!-- //banner -->
+
+    <!-- tour packages -->
+    <section class="packages py-5">
+      <div class="container py-lg-4 py-sm-3">
+        <h3 class="heading text-capitalize text-center">探索我們的套裝行程</h3>
+        <p class="text mt-2 mb-5 text-center">
+          探索多樣性豐富的套裝行程，讓您的旅行更輕鬆愉快。從浪漫之旅到刺激的冒險，我們提供各種各樣的行程，滿足不同旅客的需求。無論是短途旅行還是長途旅行，我們都有適合您的選擇。
+        </p>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p1.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>58888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓, 薄荷島
+              </h6>
+              <h5 class="my-2">宿霧薄荷島跳島</h5>
+              <p class="">跟著經驗豐富的導遊探索薄荷島，在處女島海灘放鬆身心</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p2.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>68888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓 , 長灘島
+              </h6>
+              <h5 class="my-2">風帆船 夕陽航海體驗</h5>
+              <p class="">乘坐風帆船在海上欣賞夕陽，長灘島必體驗的海上活動</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>4 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p3.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>78888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>印度, 阿格拉
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">登上印度到阿格拉的高速渡輪，體驗印度的終極旅行體驗</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>3 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p4.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>88888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>日本, 富士山
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">
+                河口湖是位於山梨縣富士河口湖町的湖泊，為富士五湖之一
+              </p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p1.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>58888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓, 薄荷島
+              </h6>
+              <h5 class="my-2">宿霧薄荷島跳島</h5>
+              <p class="">跟著經驗豐富的導遊探索薄荷島，在處女島海灘放鬆身心</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p2.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>68888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓 , 長灘島
+              </h6>
+              <h5 class="my-2">風帆船 夕陽航海體驗</h5>
+              <p class="">乘坐風帆船在海上欣賞夕陽，長灘島必體驗的海上活動</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>4 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p3.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>78888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>印度, 阿格拉
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">登上印度到阿格拉的高速渡輪，體驗印度的終極旅行體驗</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>3 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p4.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>88888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>日本, 富士山
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">
+                河口湖是位於山梨縣富士河口湖町的湖泊，為富士五湖之一
+              </p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p1.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>58888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓, 薄荷島
+              </h6>
+              <h5 class="my-2">宿霧薄荷島跳島</h5>
+              <p class="">跟著經驗豐富的導遊探索薄荷島，在處女島海灘放鬆身心</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p2.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>68888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓 , 長灘島
+              </h6>
+              <h5 class="my-2">風帆船 夕陽航海體驗</h5>
+              <p class="">乘坐風帆船在海上欣賞夕陽，長灘島必體驗的海上活動</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>4 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p3.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>78888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>印度, 阿格拉
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">登上印度到阿格拉的高速渡輪，體驗印度的終極旅行體驗</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>3 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p4.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>88888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>日本, 富士山
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">
+                河口湖是位於山梨縣富士河口湖町的湖泊，為富士五湖之一
+              </p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p1.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>58888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓, 薄荷島
+              </h6>
+              <h5 class="my-2">宿霧薄荷島跳島</h5>
+              <p class="">跟著經驗豐富的導遊探索薄荷島，在處女島海灘放鬆身心</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p2.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>68888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>菲律賓 , 長灘島
+              </h6>
+              <h5 class="my-2">風帆船 夕陽航海體驗</h5>
+              <p class="">乘坐風帆船在海上欣賞夕陽，長灘島必體驗的海上活動</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>4 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p3.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>78888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>印度, 阿格拉
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">登上印度到阿格拉的高速渡輪，體驗印度的終極旅行體驗</p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>3 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+            <div class="image-tour position-relative">
+              <a href="packages_detail.html"
+                ><img src="images/p4.jpg" alt="" class="img-fluid"
+              /></a>
+              <p><span class="fa fa-tags"></span> <span>88888起</span></p>
+            </div>
+            <div class="package-info">
+              <h6 class="mt-1">
+                <span class="fa fa-map-marker mr-2"></span>日本, 富士山
+              </h6>
+              <h5 class="my-2">Sodales vel mauris</h5>
+              <p class="">
+                河口湖是位於山梨縣富士河口湖町的湖泊，為富士五湖之一
+              </p>
+              <ul class="listing mt-3">
+                <li>
+                  <span class="fa fa-clock-o mr-2"></span>Duration :
+                  <span>5 Days</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tour packages -->
+
+    <!-- destinations -->
+    <section class="destinations py-5" id="destinations">
+      <div class="container py-xl-5 py-lg-3">
+        <h3 class="heading text-capitalize text-center">熱門套裝行程</h3>
+        <p class="text mt-2 mb-5 text-center">
+          無論您是喜愛自然風光、文化古蹟或是美食之旅，我們都有適合您的票券選擇。
+        </p>
+        <div class="row inner-sec-w3layouts-w3pvt-lauinfo">
+          <div class="col-md-3 col-sm-6 col-6 destinations-grids text-center">
+            <h4 class="destination mb-3">桃園青埔</h4>
+            <div class="image-position position-relative">
+              <img src="images/xpark.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="destinations-info">
+              <div class="caption mb-lg-3">
+                <h4>Xpark 都會型水生公園門票</h4>
+                <a href="packages_detail.html">立即購買</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6 destinations-grids text-center">
+            <h4 class="destination mb-3">日本東京</h4>
+            <div class="image-position position-relative">
+              <img src="images/desiny.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="destinations-info">
+              <div class="caption mb-lg-3">
+                <h4>東京迪士尼度假區門票</h4>
+                <a href="packages_detail.html">立即購買</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-6 col-6 destinations-grids text-center mt-md-0 mt-4"
+          >
+            <h4 class="destination mb-3">日本東京</h4>
+            <div class="image-position position-relative">
+              <img src="images/SHIBUYA_SKY.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="destinations-info">
+              <div class="caption mb-lg-3">
+                <h4>SHIBUYA SKY<br />展望台電子門票</h4>
+                <a href="packages_detail.html">立即購買</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-6 col-6 destinations-grids text-center mt-md-0 mt-4"
+          >
+            <h4 class="destination mb-3">日本大阪</h4>
+            <div class="image-position position-relative">
+              <img src="images/Universal_Studio.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="destinations-info">
+              <div class="caption mb-lg-3">
+                <h4>環球特快入場券</h4>
+                <a href="packages_detail.html">立即購買</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- destinations -->
+
+    <!--footer -->
+    <footer>
+      <section class="footer footer_w3layouts_section_1its py-5">
+        <div class="container py-lg-4 py-3">
+          <div class="row footer-top">
+            <div class="col-lg-3 col-sm-6 footer-grid_section_1its_w3">
+              <div class="footer-title">
+                <h3>地點資訊</h3>
+              </div>
+              <div class="row">
+                <ul class="col-12 links">
+                  <li>
+                    <a
+                      href="https://www.google.com/maps?q=桃園市中壢區復興路46號9樓"
+                      target="_blank"
+                      >地址：桃園市中壢區復興路46號9樓</a
+                    >
+                  </li>
+                  <li><a href="tel:02-1234-5678">電話：02-1234-5678</a></li>
+                  <li>
+                    <a href="mailto:contact@example.com"
+                      >信箱：triplirht@gmail.com</a
+                    >
+                  </li>
+                  <li><a href="tel:02-1234-5678">傳真：02-1234-5678</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-grid_section mt-sm-0 mt-4">
+              <div class="footer-title">
+                <h3>認識TripLight</h3>
+              </div>
+              <div class="row">
+                <ul class="col-10 links">
+                  <li><a href="about.html" class="scroll">關於我們</a></li>
+                  <li>
+                    <a href="user_terms.html" class="scroll">使用者條款 </a>
+                  </li>
+                  <li>
+                    <a href="privacy_policy.html" class="scroll"
+                      >隱私權保護政策</a
+                    >
+                  </li>
+                  <li><a href="faq.html" class="scroll"> 常見問題與幫助</a></li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3"
+            >
+              <div class="footer-title">
+                <h3>成為合作夥伴</h3>
+              </div>
+              <div class="row">
+                <ul class="col-6 links">
+                  <li>
+                    <a href="supplier_form.html" class="scroll">成為供應商</a>
+                  </li>
+                  <li>
+                    <a href="blogger_photographer.html" class="scroll"
+                      >部落客/攝影師合作計畫</a
+                    >
+                  </li>
+                  <li>
+                    <a href="group_form.html" class="scroll">團體客製規劃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3"
+            >
+              <div class="footer-title">
+                <h3>聯絡我們</h3>
+              </div>
+              <ul class="social_section_1info">
+                <li>
+                  <a href="https://www.facebook.com/TibaMe"
+                    ><img src="./images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/tibame_wiedu/"
+                    ><img src="./images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"
+                    ><img src="./images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li class="youtube">
+                  <a
+                    href="https://www.youtube.com/channel/UClhecf7eOGHwbKW5e7l_pTA"
+                    ><img src="./images/youtube.svg" alt="youtube"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="copyright py-3 text-center">
+      <p>COPYRIGHT © 2023 TripLight All rights reserved.</p>
+    </div>
+    <!-- //copyright -->
+
+    <!-- move top -->
+    <div class="move-top text-right">
+      <a href="#home" class="move-top">
+        <span class="fa fa-angle-up mb-3" aria-hidden="true"></span>
+      </a>
+    </div>
+    <!-- move top -->
+  </body>
+</html>
